@@ -1,0 +1,403 @@
+.intro, .primary .p-cont, .lesson .lesson-tab, .lesson .tab-body .b-item, .double .d-cont, .guide .g-cont, .question .q-cont, .question .c-item .ask, .question .c-item .answer {
+  zoom: 1;
+}
+.intro:after, .primary .p-cont:after, .lesson .lesson-tab:after, .lesson .tab-body .b-item:after, .double .d-cont:after, .guide .g-cont:after, .question .q-cont:after, .question .c-item .ask:after, .question .c-item .answer:after {
+  clear: both;
+}
+.intro:before, .primary .p-cont:before, .lesson .lesson-tab:before, .lesson .tab-body .b-item:before, .double .d-cont:before, .guide .g-cont:before, .question .q-cont:before, .question .c-item .ask:before, .question .c-item .answer:before, .intro:after, .primary .p-cont:after, .lesson .lesson-tab:after, .lesson .tab-body .b-item:after, .double .d-cont:after, .guide .g-cont:after, .question .q-cont:after, .question .c-item .ask:after, .question .c-item .answer:after {
+  content: "";
+  display: table;
+}
+
+.point::before, .double .c-item .i-detail li::before, .edu-title span, .primary .p-btn a, .lesson .tab-body .name, .lesson .tab-body .avatar,
+.lesson .tab-body .time, .lesson .tab-body .price, .lesson .tab-body .btn, .way .c-item, .guide .c-item li .key {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+a:hover {
+  color: #db2d36;
+}
+
+.point::before, .double .c-item .i-detail li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.intro {
+  margin-bottom: 80px;
+}
+.intro .intro-l {
+  float: left;
+  width: 760px;
+  height: 122px;
+  padding: 18px 20px;
+  font-size: 16px;
+  border: solid 1px #dddddd;
+}
+.intro .intro-l .logo {
+  float: left;
+  margin-right: 30px;
+}
+.intro .intro-l .logo .text {
+  line-height: 30px;
+  text-align: center;
+}
+.intro .intro-l p {
+  float: left;
+  width: 64%;
+  line-height: 24px;
+}
+.intro .intro-r {
+  float: right;
+  width: 280px;
+  height: 160px;
+}
+.intro .intro-r img {
+  width: 100%;
+  height: 100%;
+}
+
+.edu-title {
+  text-align: center;
+}
+.edu-title .large {
+  font-size: 30px;
+  line-height: 30px;
+}
+.edu-title .merit {
+  padding-top: 20px;
+}
+.edu-title span {
+  height: 20px;
+  padding-left: 25px;
+  margin-right: 28px;
+  line-height: 20px;
+  font-size: 16px;
+  background: url(../images/icon_1.png) no-repeat left center;
+}
+
+.primary {
+  margin-bottom: 80px;
+}
+.primary .p-cont {
+  padding-top: 48px;
+  margin-right: -20px;
+}
+.primary .c-item {
+  float: left;
+  width: 260px;
+  margin: 0 20px 40px 0;
+}
+.primary .c-item img {
+  width: 100%;
+}
+.primary .c-item .name {
+  padding: 18px 0 0 20px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #000;
+}
+.primary .c-item .teacher {
+  padding: 0 20px;
+  margin-bottom: 18px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #888888;
+}
+.primary .c-item .teacher span {
+  float: right;
+  font-size: 13px;
+}
+.primary .p-btn {
+  text-align: center;
+}
+.primary .p-btn a {
+  width: 598px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 20px;
+  border-radius: 28px;
+  border: solid 1px #db2d36;
+  color: #db2d36;
+}
+.primary .p-btn a:hover {
+  background: #db2d36;
+  color: #fff;
+}
+
+.lesson {
+  margin-bottom: 70px;
+}
+.lesson .lesson-tab {
+  padding-top: 86px;
+}
+.lesson .tab-head {
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+.lesson .tab-head ul {
+  margin-bottom: 14px;
+}
+.lesson .tab-head li {
+  height: 58px;
+  margin-bottom: 10px;
+  line-height: 58px;
+  font-size: 24px;
+  border: solid 1px #cccccc;
+  cursor: pointer;
+}
+.lesson .tab-head li.on {
+  border: solid 1px #db2d36;
+  background: #db2d36;
+  color: #fff;
+}
+.lesson .tab-head a {
+  line-height: 16px;
+  font-size: 16px;
+  color: #db2d36;
+  text-decoration: underline;
+}
+.lesson .tab-body {
+  display: none;
+  float: right;
+  width: 980px;
+}
+.lesson .tab-body.on {
+  display: block;
+}
+.lesson .tab-body .b-item {
+  height: 48px;
+  padding: 16px 40px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+}
+.lesson .tab-body .b-item:hover .btn {
+  background: #db2d36;
+  color: #fff;
+}
+.lesson .tab-body .name {
+  width: 250px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.lesson .tab-body .avatar,
+.lesson .tab-body .time {
+  vertical-align: middle;
+}
+.lesson .tab-body .avatar {
+  width: 140px;
+  line-height: 48px;
+}
+.lesson .tab-body .avatar img {
+  margin-right: 10px;
+}
+.lesson .tab-body .time {
+  width: 170px;
+  line-height: 24px;
+}
+.lesson .tab-body .price {
+  width: 160px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #f15656;
+  vertical-align: middle;
+}
+.lesson .tab-body .price span {
+  font-size: 24px;
+}
+.lesson .tab-body .btn {
+  width: 158px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 20px;
+  border: solid 1px #db2d36;
+  color: #db2d36;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.double {
+  margin-bottom: 80px;
+}
+.double .d-cont {
+  padding-top: 48px;
+}
+.double .c-item {
+  width: 530px;
+  height: 260px;
+  border-radius: 24px;
+  border: solid 1px #cccccc;
+  color: #ffffff;
+}
+.double .c-item img {
+  float: left;
+  margin: 60px 40px;
+}
+.double .c-item .i-detail {
+  float: left;
+  padding-top: 40px;
+}
+.double .c-item .i-detail .name {
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.double .c-item .i-detail li {
+  font-size: 16px;
+  line-height: 30px;
+}
+.double .c-l {
+  float: left;
+  background-color: #cd4040;
+}
+.double .c-r {
+  float: right;
+  background-color: #f06d34;
+}
+
+.way {
+  margin-bottom: 40px;
+}
+.way .way-cont {
+  text-align: center;
+  padding-top: 40px;
+  margin: 0 -20px;
+}
+.way .c-item {
+  width: 260px;
+  height: 150px;
+  padding-top: 28px;
+  margin: 0 10px 40px;
+  border-radius: 20px;
+  border: solid 1px #cccccc;
+  text-align: center;
+}
+.way .c-item img {
+  margin-bottom: 10px;
+}
+.way .c-item .i-title {
+  margin-bottom: 6px;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.way .c-item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #888888;
+}
+
+.guide {
+  margin-bottom: 80px;
+}
+.guide .g-cont {
+  padding-top: 48px;
+  margin-right: -58px;
+}
+.guide .c-item {
+  float: left;
+  width: 358px;
+  height: 230px;
+  margin-right: 26px;
+  border-radius: 20px;
+  border: solid 1px #cccccc;
+}
+.guide .c-item .i-title {
+  padding-left: 69px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  background: url(../images/white_1.png) no-repeat #de3535 24px;
+}
+.guide .c-item:nth-of-type(2) .i-title {
+  background: url(../images/white_2.png) no-repeat #e98230 24px;
+}
+.guide .c-item:nth-of-type(3) .i-title {
+  background: url(../images/white_3.png) no-repeat #4077c1 24px;
+}
+.guide .c-item ul {
+  padding: 38px 0 0 16px;
+}
+.guide .c-item li {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.guide .c-item li .key {
+  padding-left: 8px;
+  height: 19px;
+  line-height: 19px;
+  background-color: #ffd8d8;
+  border-radius: 9px;
+}
+
+.question {
+  margin-bottom: 70px;
+}
+.question .q-cont {
+  height: 480px;
+  margin-top: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.question .c-item {
+  float: left;
+  padding: 48px 0 40px;
+  margin: 0 40px;
+  border-bottom: 1px dashed #bbb;
+}
+.question .c-item .key,
+.question .c-item .text {
+  float: left;
+}
+.question .c-item .key {
+  width: 26px;
+  height: 26px;
+  margin-right: 12px;
+  line-height: 26px;
+  font-size: 22px;
+  background-color: #e12929;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+}
+.question .c-item .ask {
+  margin-bottom: 20px;
+  line-height: 26px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #e12929;
+}
+.question .c-item .answer .text {
+  width: 432px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.question .c-item:last-child {
+  border-bottom: none;
+}
+.question .c-item:nth-child(3) {
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=index.css.map */
